@@ -1,0 +1,21 @@
+body {
+    background-image: url('../img/space.jpg');
+    background-position-x: left;
+    background-position-y: top;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: black;
+}
+h1,p {
+    width: 500px;
+    color: #fff;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+    font-weight: bold;
+}

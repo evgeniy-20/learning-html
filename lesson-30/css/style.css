@@ -1,0 +1,8 @@
+ul {
+    color: blue;
+}
+.menu1 a:link, .menu1 a:visited {
+    text-decoration: none;
+    color: blue;
+    font: 13px Arial;
+}

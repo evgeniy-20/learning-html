@@ -1,0 +1,67 @@
+#hi {
+    text-decoration: underline;
+}
+#hello {
+    text-decoration: line-through;
+}
+#world {
+    text-decoration: overline;
+}
+.row {
+    width: 200px;
+    height: 200px;
+    border: 1px solid orange;
+}
+.t-2 {
+    width: 500px;
+    height: 200px;
+    border: 1px dotted blue;
+    margin-top: 20px;
+}
+.t-3 {
+    width: 100px;
+    height: 100px;
+    border: 1px dotted green;
+    margin-top: 20px;
+}
+.t-4 {
+    width: 500px;
+    height: 200px;
+    border-bottom: 1px solid red;
+    border-top: 1px solid blue;
+    border-left: 1px solid black;
+    border-right: 1px solid green;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.t-5 {
+    width: 300px;
+    height: 300px;
+    border: 1px dotted green;
+    margin-top: 20px;
+    border-radius: 10px 30px 10px 30px;
+}
+.t-6 {
+    width: 300px;
+    height: 300px;
+    border: 1px dotted green;
+    margin-top: 20px;
+    border-radius: 10px 30px 50px 70px;
+}
+.t-7 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+#d4 {
+    color: blue;
+}
+#d5 {
+    color: red;
+    text-decoration: underline;
+}
+#d6 {
+    color: black;
+}

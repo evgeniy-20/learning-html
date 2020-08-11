@@ -1,0 +1,18 @@
+body {
+    background-image: url('../img/fon1\ \(1\).jpg');
+    background-position-x: right;
+    background-position-y: top;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+h1,p {
+    color: black;
+}
+p {
+    width: 500px;
+    text-align: justify;
+    font-weight: bold;
+}
