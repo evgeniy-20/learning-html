@@ -1,0 +1,24 @@
+ul {
+    list-style-type: none;
+}
+li {
+    margin-right: 4px;
+    float: left;
+}
+a {
+    text-decoration: none;
+    color: blue;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #1A31A2;
+    padding: 5px;
+}
+a:hover {
+    color: white;
+    background-color: #484848;
+}
+.active {
+    color: #fff;
+    background-color: #484848;
+    border: 1px solid black;
+}
