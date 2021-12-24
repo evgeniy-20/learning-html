@@ -1,0 +1,1404 @@
+/* start resent */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.73333;
+    color: #777;
+    background-color: #fff;
+    font-weight: 300;
+}
+
+.main {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    letter-spacing: 50px;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 13px;
+    color: #111;
+    text-transform: uppercase;
+    margin: 0 0 70px;
+}
+
+h3 {
+    font-family: 'Dosis' , sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.clearfix::after {
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 4px;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.btn-primery {
+    padding: 14px 40px;
+    color: #111;
+    background-color: #cfcfcf;
+}
+
+.btn-read {
+    font-size: 11px;
+    position: relative;
+    padding: 8px 15px;
+    background-color: #e5e5e5;
+}
+.btn-submit {
+    color: #fff;
+    background-color: #333;
+    font-size: 13px;
+    padding: 13px 20px;
+}
+
+.btn-subscribe {
+    display: block;
+    color: #fff;
+    background-color: #323232;
+    font-size: 13px;
+    padding: 14px 20px;
+}
+.input {
+    resize: none;
+    border-radius: 3px;
+    padding: 14px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+input.input {
+    height: 36px;
+}
+
+textarea.input {
+    height: 82px;
+}
+
+.info-holder {
+    font-size: 11px;
+    color: #aaa;
+}
+
+.container {
+    max-width: 1190px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.row:after {
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.col-3 {
+    padding: 0 15px;
+    float: left;
+    width: calc(100%/3);
+}
+.col-2 {
+    padding: 0 15px;
+    float: left;
+    width: 50%;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.blockquote {
+    font-size: 24px;
+}
+
+.blockquote p {
+    margin: 0 0 35px;
+}
+
+.blockquote .autor {
+    font-size: 11px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    font-style: normal;
+    padding-left: 18px;
+}
+
+.blockquote .autor::before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    top: 50%;
+    height: 1px;
+    width: 11px;
+    background-color: #a2a2a2;
+}
+
+.default-section {
+    padding: 140px 0;
+}
+
+/* defaul*/
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+.header.active .header-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header.active .menu-opener span {
+    opacity: 0;
+}
+
+.header.active .menu-opener::before {
+    top: 50%;
+    transform: translate(-50% , -50%) rotate(45deg);
+}
+
+.header.active .menu-opener::after {
+    bottom: 50%;
+    transform: translate(-50% , -50%) rotate(-45deg);
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo a img:hover {
+    transform: scale(1.1);
+}
+
+.menu-opener {
+    display: none;
+}
+
+.header .nav-list li {
+    display: inline-block;
+    padding: 0 15px;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.header .nav-list li a:hover {
+    color: #111;
+    transform: scale(1.1);
+}
+.header .nav-list {
+    float: right;
+    overflow: hidden;
+    line-height: 28px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* end header*/
+
+.main-page-section span {
+    font-weight: 300;
+    font-size: 19px;
+    color: #fefefe;
+
+}
+
+.main-page-section .text-holder {
+    display: inline-block;
+    line-height: 100px;
+    max-width: 960px;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-page-section {
+    background-image: url(../img/bg-header.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.main-page-section .withe-romb {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 3px;
+    color: #222;
+}
+
+.main-page-section .withe-romb i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) rotate(-45deg);
+}
+
+.main-page-section .withe-romb:hover a {
+    opacity: 0.7;
+}
+/* main page end */
+
+.about-studio-section {
+    border-bottom: 1px solid #ececec;
+}
+
+.about-studio-section .img-holder img {
+    filter: grayscale(100%);
+    transition: all ease-in-out 1s;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+}
+
+.about-studio-section .img-holder:hover img {
+    transform: rotateY(180deg);
+}
+
+.about-studio-section .img-holder {
+    transition: all ease-in-out 1s;
+    margin: 0 0 25px;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+    position: relative;
+    padding: 110% 0 0;
+    display: block;
+    overflow: hidden;
+    z-index: 3;
+    transform: rotateY(0deg);
+}
+
+.about-studio-section .img-holder .about-me {
+    padding: 35px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    transition: all ease-in-out 1s;
+}
+
+.about-studio-section .img-holder:hover .about-me {
+    transform: rotateY(360deg);
+}
+
+.about-studio-section .user-name {
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.about-studio-section .user-position {
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.about-studio-section .text-holder {
+    margin: 0 0 110px;
+}
+/* about studio section end */
+
+.looking-for-section {
+    background-color: #111;
+    color: #fff;
+}
+
+.looking-for-section h2 {
+    color: inherit;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin: 0 0 30px;
+}
+
+.looking-for-section .text-holder {
+    opacity: .7;
+    margin: 0 0 40px;
+}
+
+.looking-for-section .pc-img-holder {
+    margin-top: -172px;
+    margin-right: -47px;
+}
+/* looking for section end */
+
+.services-tabs-nav li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: calc(100% / 5);
+    margin-left: -4px;
+}
+.services-tabs-nav li.ui-tabs-active a,
+.services-tabs-nav a:hover {
+    color: #111111;
+}
+
+.services-tabs-nav a {
+    transition: color ease-in-out .3s;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    outline: none;
+    color: #777777;
+}
+
+.services-tabs-nav a i {
+    display: block;
+    width: 100%;
+    font-size: 48px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.tabs-holder {
+    padding: 75px 0;
+    min-height: 400px;
+}
+/* tabs section end*/
+
+.latest-news-section .header-of-block a {
+    font-family: 'Dosis' , sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #999999;
+    display: inline-block;
+    line-height: 31px;
+    padding-right: 10px;
+}
+
+.latest-news-section .header-of-block a:hover {
+    color: #111;
+}
+
+.news-artical .img-holder {
+    margin: 0 0 28px;
+}
+
+.news-artical .img-holder img {
+    filter: grayscale(100%);
+    min-height: 216px;
+}
+
+.news-artical .img-holder img:hover {
+    filter: grayscale(0);
+}
+
+.artical-text-list {
+    margin: 0 -10px 25px;
+}
+
+.artical-text-list li {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Dosis' , sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #999999;
+    padding: 0 10px;
+    position: relative;
+}
+
+.artical-text-list li:after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-right: 1px solid #999999;
+    top: 3px;
+    right: 0;
+    bottom: 3px;
+}
+
+.artical-text-list li:last-child::after {
+    display: none;
+}
+
+.artical-text p {
+    margin: 0 0 25px;
+}
+/*news section end*/
+
+.choose-section .reason span i {
+    display: block;
+    width: 100%;
+    font-size: 48px;
+    margin-bottom: 37px;
+    outline: none;
+    color: #111;
+}
+
+.choose-section .reason span {
+    font-family: 'Dosis' , sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #111;
+    letter-spacing: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 30px;
+}
+
+.choose-section .text-holder {
+    margin: 0 0 85px;
+}
+
+.choose-section .text-holder p {
+    font-size: 14px;
+}
+/* choosee section end */
+
+.portfolio-section {
+    padding: 140px 0 0 0;
+}
+
+.portfolio-section .text-holder {
+    margin: 0 0 85px;
+}
+
+.portfolio-section .text-holder p {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.portfolio-tabs-nav {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.portfolio-tabs-nav li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: calc(100% / 4);
+    margin-left: -4px;
+}
+.portfolio-tabs-nav li.ui-tabs-active a,
+.portfolio-tabs-nav a:hover {
+    color: #111111;
+}
+
+.portfolio-tabs-nav a {
+    transition: color ease-in-out .3s;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    outline: none;
+    color: #777777;
+}
+.tabs-holder-portfolio .image-holder img {
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.tabs-holder-portfolio .active-img img {
+    filter: grayscale(0%);
+}
+
+.tabs-holder-portfolio {
+    padding: 50px 0 0 0;
+}
+
+.portfolio-section .col-3 {
+    padding: 0 5px;
+}
+
+.portfolio-section .row {
+    margin: 0 -5px;
+}
+/* portfolio end*/
+
+.slider-section {
+    background-color: #020202;
+    color: #fff;
+    overflow: hidden;
+}
+
+.slider-section .slide-holder .icon-quote {
+    font-size: 32px;
+    margin: 0 0 20px;
+}
+
+.slider-section .blockquote {
+    margin: 0 auto;
+}
+
+.slider-section .blockquote p {
+    opacity: .75;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.slider-section .blockquote .autor {
+    opacity: .30;
+    max-width: 250px;
+    margin: 30px auto;
+}
+
+.slider-section h2 {
+    color: #fff;
+    margin: 0 0 40px;
+}
+
+.slider-section .slide-holder {
+    padding: 0 70px;
+    outline: none;
+}
+
+.slider-section .slick-arrow {
+    position: absolute;
+    top: 50%;
+    background-color: #fff;
+    z-index: 10; 
+    border-radius: 3px;
+    width: 80px;
+    height: 80px;
+    transform: translateY(-50%) rotate(45deg)
+}
+
+.slider-section .slick-prev {
+    left: -40px;    
+}
+
+.slider-section .slick-next {
+    right: -40px;
+}
+
+.slider-section .slick-prev i {
+    position: absolute;
+    top: 22px;
+    transform: rotate(-45deg);
+    left: 50px;
+}
+
+.slider-section .slick-next i {
+    position: absolute;
+    top: 45px;
+    transform: rotate(-45deg);
+    right: 50px;
+}
+
+.slider-section .slick-dots {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slider-section .slick-dots li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 3px;
+}
+.slider-section .slick-dots li button {
+    background-color: #fff;
+    border: 1px solid transparent;
+    width: 10px;
+    height: 10px;
+    line-height: 0;
+    font-size: 0;
+    border-radius: 50%;
+}
+
+.slider-section .slick-dots li.slick-active button {
+    background-color: transparent;
+    border-color: #fff;
+}
+/* slider section end*/
+
+.contact-form .btn-submit {
+    float: right;
+}
+
+.contacts-section .input-holder {
+    margin-bottom: 10px;
+}
+
+.contacts-section .i-contact {
+    background-color: #111;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+}
+
+.contacts-section .i-contact i {
+    color: #f8f8f8;
+    font-size: 14px;
+    position: absolute;
+    transform: translateY(-50%) rotate(-45deg);
+    top: 46%;
+    left: 28%;
+}
+
+.contacts-section .text-holder {
+    padding: 0 0 0 50px;
+    margin: 0 0 100px;
+}
+
+.contacts-section .text-holder span {
+    display: block;
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 300;
+}
+
+.contacts-section .text-holder span.contact-kind {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #777;
+    letter-spacing: 4px;
+}
+
+.contacts-section .text-holder .contact-mean {
+    font-size: 15px;
+    color: #444;
+    letter-spacing: 2px;
+}
+
+.contacts-section .text-holder a:hover {
+    color: #111;
+}
+
+.contacts-section .contact-holder {
+    position: relative;
+}
+
+.contacts-section .contact-form {
+    max-width: 800px;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.contacts-section .row {
+    max-width: 800px;
+    vertical-align: middle;
+    margin:  auto;
+}
+
+.contact-form .info-holder {
+    margin-top: 30px;
+}
+
+.contacts-section h2 {
+    margin: 0 0 100px;
+}
+
+/* contact section end */
+
+.subscribe-section {
+    background-color: #f8f8f8;
+}
+
+.subscribe-section h2 {
+    max-width: 700px;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto 20px;
+}
+
+.subscribe-form {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subscribe-form .input-holder {
+    width: calc(100% - 152px);
+    float: left;
+    padding-right: 5px;
+}
+
+.subscribe-form .button-holder {
+    float: left;
+    
+}
+/* subscribe section end */
+
+.map-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.map-section:hover .map-opener {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.map-opener {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    transition: opacity ease-in-out .5s, visibliity ease-in-out .5s;
+}
+
+/*.map-opener:hover {
+    opacity: 0;
+    visibility: hidden;
+}*/
+
+.map-opener h2 {
+    position: relative;
+    color: #fff;
+    margin: 0;
+    opacity: .75;
+    padding-right: 29px;
+}
+
+.map-opener h2 i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 10px;
+    transform: translateY(-50%);
+
+}
+
+.map-opener .text-holder {
+    position: absolute;
+    z-index: 2;
+    padding-top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 0;
+}
+
+.map-holder {
+    position: relative;
+    padding-bottom: 23%;
+    z-index: 1;
+    transition: transform ease-in-out .3s ;
+
+}
+
+.map-holder .map-iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.map-opener .withe-romb {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 3px;
+    color: #222;
+}
+
+.map-opener .withe-romb i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) rotate(-45deg);
+}
+
+.map-section:hover .map-holder {
+    transform: scale(1.1);
+}
+/* map section end*/
+
+.start-project-section {
+    background-color: #111;
+    margin: 0;
+}
+
+.start-project-section h2 {
+    color: #9f9f9f;
+    margin: 0 0 25px;
+}
+/* start project end*/
+
+.footer-section {
+    padding: 140px 0 60px;
+}
+
+.footer .logo img {
+    min-height: 30px;
+}
+
+.footer .social-nav {
+    max-width: 300px;
+    margin: 24px auto 110px;
+}
+
+.footer .social-nav li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: calc(100% / 5);
+    float: left;
+    padding: 0 8px;
+}
+
+.footer .social-nav li i {
+    transform: rotate(-45deg);
+}
+
+.footer .social-nav li .romb-border {
+    border: solid 2px #646464;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+}
+
+.footer .text-holder span.copyright {
+    display: block;
+    font-family: 'Dosis' , sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: #111;
+}
+
+.footer .text-holder span.copyright i {
+    color: #a8a8a8;
+}
+
+.footer .text-holder span.made-with-love {
+    display: block;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 11px;
+    color: #a8a8a8;
+
+}
+/* footer end*/
+
+.button-fix {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 36px;
+    height: 36px;
+    z-index: 99;
+}
+
+
+.button-fix i {
+    font-size: 48px;
+    color: #a8a8a8;
+}
+
+/*button fixed end */
+
+@media (max-width: 768px) {
+    .menu-opener {
+        display: block;
+        float: right;
+        width: 40px;
+        height: 30px;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+    }
+
+    .menu-opener::before,
+    .menu-opener:after,
+    .menu-opener span {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 50px;
+        left: 50%;
+        background-color: #000;
+        transform: translateX(-50%);
+        transition: all ease-in-out .3s;
+    }
+
+    .menu-opener::before {
+        top: 0;
+    }
+
+    .menu-opener::after {
+        bottom: 0;
+    }
+
+    .menu-opener span {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .col-md-2 {
+        width: 50%;
+    }
+    .col-md-1 {
+        width: 100%;
+    }
+    .f-right {
+        float: right;
+    }
+    .default-section {
+        padding: 70px 0;
+    }
+    .about-studio-section .text-holder {
+        margin-bottom: 60px;
+    }
+    .looking-for-section .pc-img-holder {
+        margin-top: 0;
+        margin-right: 0;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .portfolio-section .image-holder {
+        height: 250px;
+    }
+
+    .latest-news-section .col-md-2 {
+        margin: 0 0 30px;
+    }
+
+    .contacts-section .text-holder .contact-mean {
+        font-size: 12px;
+    }
+
+    .about-studio-section .img-holder .about-me {
+        padding: 3px 19px;
+    }
+    
+    .header-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #a1a1a1;
+        padding: 15px;
+        margin: 0 0 15px;
+        box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.05);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .header-menu .nav-list {
+        text-align: center;   
+        float: none;
+    }
+
+    .header-menu .nav-list li {
+        padding: 0 15px;
+        margin: 0 0 15px;
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-2 {
+        width: 50%;
+    }
+    .col-sm-1 {
+        width: 100%;
+    }
+    .default-section {
+        padding: 50px 0;
+    }
+
+    .header .logo img {
+        max-width: 90%;
+    }
+
+    .menu-opener {
+        width: 30px;
+        height: 20px;
+    }
+
+    .main-page-section .text-holder {
+        line-height: 50px;
+    }
+
+    .main-page-section .text-holder h1 {
+        font-size: 20px;
+        letter-spacing: 37px;
+    }
+
+    .main-page-section .text-holder span {
+        font-size: 17px;
+    }
+
+    .main-page-section .withe-romb {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-studio-section .img-holder img {
+        width: 100%;
+    }
+
+    .about-studio-section .text-holder {
+        margin-bottom: 30px;
+    }
+
+    .about-studio-section .text-center {
+        margin: 0 0 20px;
+    }
+
+    .services-tabs-nav li {
+        width: calc(100% / 2);
+        margin-bottom: 20px;
+    }
+
+    .services-section .tabs-holder .text-holder{
+        margin-bottom: 30px;
+    }
+
+    .services-section .tabs-holder {
+        padding: 30px 0;
+    }
+
+    .portfolio-tabs-nav li {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .slider-section .slick-arrow {
+        width: 70px;
+        height: 70px;
+    }
+
+    .slider-section .slick-next i {
+        top: 48px;
+    }
+
+    .slider-section .slick-prev i {
+        top: 10px;
+    }
+
+    .slider-section .slick-dots {
+        bottom: 0;
+    }
+
+    .subscribe-form {
+        max-width: 500px;
+    }
+
+    .contacts-section .text-holder {
+        margin: 0 0 50px;
+    }
+
+    .map-opener .text-holder {
+        padding-top: 45px;
+    }
+
+    .map-opener .withe-romb {
+        height: 20px;
+        width: 20px;
+    }
+
+    .map-opener h2 {
+        font-size: 13px;
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    
+    h2 {
+        margin: 0 0 30px;
+        font-size: 13px;
+    }
+
+    .default-section {
+        padding: 30px 0;
+    }
+
+    .col-560-1 {
+        width: 100%;
+    }
+
+    .header {
+        padding: 15px;
+    }
+
+    .header .logo img {
+        max-width: 80%;
+    }
+
+    .menu-opener {
+        width: 25px;
+        height: 15px;
+    }
+
+    .main-page-section .text-holder h1 {
+        letter-spacing: 25px;
+    }
+
+    .main-page-section .text-holder span {
+        font-size: 15px;
+    }
+
+    .main-page-section .withe-romb {
+        width: 25px;
+        height: 25px;
+    }
+
+    .services-section .tabs-holder {
+        padding: 0;
+    }
+
+    .portfolio-section .text-holder {
+        margin: 0px 0 40px;
+    }
+
+    .tabs-holder-portfolio {
+        padding: 25px 0 0 0;
+    }
+
+   .portfolio-section .image-holder {
+        height: 190px;
+    }
+
+    .btn-primery {
+        padding: 11px 30px;
+        font-size: 10px;
+    }
+
+    .slider-section h2 {
+        margin: 0 0 20px;
+    }
+
+    .slider-section .slide-holder .icon-quote {
+        font-size: 22px;
+        margin: 0 0 15px;
+    }
+
+    .slider-section .blockquote {
+        font-size: 17px;
+    }
+
+    .latest-news-section .header-of-block a {
+        float: none;
+        font-size: 9px;
+    }
+
+    .latest-news-section h2 {
+        margin: 0 0 15px;
+    }
+
+    .subscribe-section h2 {
+        font-size: 10px;
+    }
+
+    .btn-subscribe {
+        font-size: 11px;
+        padding: 11px 15px;
+    }
+
+    .subscribe-form {
+        max-width: 320px;
+    }
+
+    .contacts-section h2 {
+        margin: 0 0 50px;
+    }
+
+    .contacts-section .input-holder {
+        margin-bottom: 5px;
+    }
+
+    .contact-form .info-holder {
+        margin: 0 0 15px;
+    }
+
+    .btn-submit {
+        font-size: 9px;
+        padding: 11px 16px;
+    }
+
+    .map-opener h2 {
+       display: none;
+
+    }
+
+    .map-opener .text-holder {
+        padding-top: 30px;
+    }
+
+    .footer .social-nav {
+        max-width: 300px;
+        margin: 24px auto 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .col-320-1 {
+        width: 100%;
+    }
+
+    .start-project-section h2 {
+        padding: 0 10px;
+    }
+
+    .subscribe-section h2 {
+        padding: 0 10px;
+    }
+
+    .subscribe-form .input-holder {
+        float: none;
+        margin: 0 auto;
+        padding: 0 0 10px;
+    }
+
+    .subscribe-form .button-holder {
+        float: none;
+    }
+
+    .subscribe-form .btn-subscribe {
+        margin: 0 auto;
+    }
+
+    .map-opener .text-holder h2 {
+        display: none;
+    }
+
+    .footer .social-nav {
+        max-width: 250px;
+    }
+}
+
+
+
+
+
+
+
+

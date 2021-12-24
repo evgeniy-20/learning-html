@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header {
+	background: #008040;
+    color: white;
+}
+.header h1 {
+	font-size: 35px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+.header p {
+	font-size: 21px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.wrapper {
+	margin-bottom: 30px;
+}
+.center {
+	width: 800px;
+	padding: 20px;
+	margin: 0 auto;
+}
+.services {
+	background-color: #fff;
+	color: black;
+}
+.services h2 {
+	font-size: 27px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.services li {
+	padding-bottom: 10px;
+	text-align: justify;
+	font-size: 16px;
+}
+.contacts {
+	background-color: #C60304;
+    color: white;
+}
+.contacts h2 {
+	font-size: 27px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.contacts p {
+	font-size: 21px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.company h2 {
+	font-size: 27px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.company p {
+	font-size: 16px;
+	margin-bottom: 5px;
+	text-align: justify;
+}
+.footer {
+    background: #FF8040;
+    color: white;
+}
+.footer p {
+	font-size: 13px;
+	margin-bottom: 5px;
+	text-align: center;
+	padding-top: 100px;
+}

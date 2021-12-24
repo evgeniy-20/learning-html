@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 700px;
+    border: 1px solid black;
+    margin: 50px auto;
+}
+.menu {
+    display: flex;
+	margin-bottom: 20px;
+	background-color: #484848;
+}
+.menu a {
+	padding: 15px 25px;
+	text-decoration: none;
+	color: #fff;
+	font: bold 14px Arial;
+}
+.menu a:hover, .menu a.active {
+	color: #484848;
+	background-color: #fff;
+}
+.title  {
+    text-align: center;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.text {
+    padding: 0 10px;
+	margin-bottom: 5px;
+	font: 16px/1.2 Arial;
+	text-align: justify;
+}
+span a {
+    text-decoration: none;
+    color: blue;
+}
+span a:hover {
+    text-decoration: underline;
+    color: green;
+}

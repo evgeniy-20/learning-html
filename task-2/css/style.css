@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+	margin-bottom: 30px;
+}
+.center {
+	width: 800px;
+	padding: 20px;
+	margin: 0 auto;
+}
+.wrapper.line {
+	background-color: #008040;
+	color: white;
+}
+.wrapper h1 {
+	margin: 0;
+	font: 40px "Times New Roman";
+}
+.wrapper h2 {
+	padding: 20px 0;
+	font: 25px "Times New Roman";
+}
+.wrapper p {
+	font: 16px/1.4 Arial;
+	text-align: justify;
+}

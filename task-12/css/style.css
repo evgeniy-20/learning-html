@@ -1,0 +1,11 @@
+.block-1 p {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align-last: right;
+}
+.block span {
+    text-transform: uppercase;
+}
+.block p::first-line {
+    color: red;
+}
