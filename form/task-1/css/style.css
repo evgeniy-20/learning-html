@@ -1,0 +1,18 @@
+.input {
+    border: 1px solid red;
+    margin-top: 20px;
+}
+.input1 {
+    padding: 5px;
+    margin-top: 20px;
+}
+.input2 {
+    padding: 5px;
+    margin-top: 2px;
+}
+.input4  {
+    color: red;
+}
+fieldset {
+    width: 300px;
+}
